@@ -27,25 +27,27 @@
   </header>
   <main>
     <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
+      <div class="row d-flex justify-content-center">
+        <div class="col-lg-5">
           <div class="content-form-generador">
             <form class="form-generador">
-              <h1>Generador de PDF’s</h1>
+              <h1 class="fw-bold">Generador de PDF’s</h1>
               <p>
                 Selecciona un archivo en formato excel
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalFormatoDeCarga">
-                  Launch demo modal
+                <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modalFormatoDeCarga">
+                  Ver formato de carga
                 </button>
               </p>
-              <div class="input-group">
-                <input type="file" class="form-control" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+              <div class="form-group">
+                <input type="file" class="form-control input-file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <div class="text-help error">Debe cargar un archivo en formato xlsx</div>
               </div>
-              <button type="button" class="btn btn-primary">GENERAR PDF’S</button>
+
+              <button type="button" class="btn primary-btn btn-lg btn-block">GENERAR PDF’S</button>
             </form>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-4">
           <div class="content-img">
             <img src="img/tickets/tickets.svg" alt="tickets Cinemark">
           </div>

@@ -54,12 +54,56 @@ h4 {
   font-size: 1.25rem;
 }
 
-caption {
-  font-size: .75rem;
+.text-help {
+  font-size: .875rem;
+  padding-top: .25rem;
+}
+
+.error {
+  color: var(--danger);
+}
+
+.success {
+  color: var(--success);
 }
 
 .fw-bold {
   font-weight: 700;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+.btn-link {
+  color: var(--info);
+}
+
+.btn-link:focus, .btn-link.focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  color: var(--white);
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-light);
+  color: var(--white);
+}
+
+.primary-btn:focus {
+  color: #fff;
+  background-color: var(--primary);
+  border-color: var(--primary-dark);
+  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
+}
+
+.form-group {
+  margin-bottom: 1rem;
 }
 
 /* FIN ESTILOS GENERALES */
@@ -83,4 +127,24 @@ caption {
   display: block;
   height: 1.5rem;
 }
+
+.content-form-generador {
+  background-color: lightyellow;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-generador {
+  background-color: pink;
+  width: 100%;
+}
+
+.form-generador p {
+  margin-bottom: .5rem;
+}
+
 /* FIN GENERADOR PDF */
