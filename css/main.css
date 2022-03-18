@@ -1,0 +1,29 @@
+/* ESTILOS GENERALES */
+:root {
+  /* Gray scale */
+  --title: #000000;
+  --body: #4E4B66;
+  --label: #6E7191;
+  --placeholder: #A0A3BD;
+  --line: #D9DBE9;
+  --input-bg: #EFF0F6;
+  --bg: #F7F7FC;
+  --white: #FCFCFC;
+  /* Foundations */
+  --primary: #B5121C;
+  --primary-dark: #910C14;
+  --primary-light: #DC2D38;
+  --secondary: #545454;
+  /* States */
+  --danger: #DC2D38;
+  --warning: #F4B740;
+  --info: #3D9CF3;
+  --success: #00BA88;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* FIN ESTILOS GENERALES */
