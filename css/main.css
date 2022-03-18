@@ -28,6 +28,7 @@
 }
 
 body {
+  background-color: var(--white);
   color: var(--body);
   font-size: 16px;
   font-family: 'Roboto Condensed', sans-serif;
@@ -35,7 +36,8 @@ body {
 }
 
 main {
-  min-height: 100vh;
+  /* background-color: salmon; */
+  min-height: calc(100vh - 72px);
 }
 
 h1 {
@@ -57,6 +59,7 @@ h4 {
 .text-help {
   font-size: .875rem;
   padding-top: .25rem;
+  display: none;
 }
 
 .error {
@@ -106,6 +109,27 @@ h4 {
   margin-bottom: 1rem;
 }
 
+.input-file {
+  color: var(--body);
+}
+
+.form-control::file-selector-button {
+  padding: .5rem 1rem;
+  margin: -0.375rem -0.75rem;
+  -webkit-margin-end: 0.75rem;
+  margin-inline-end: 0.75rem;
+  color: var(--label);
+  background-color: var(--input-bg);
+  pointer-events: none;
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+  border-inline-end-width: 1px;
+  border-radius: 0;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  font-size: 1.25rem;
+}
+
 /* FIN ESTILOS GENERALES */
 
 /* GENERADOR PDF */
@@ -129,22 +153,36 @@ h4 {
 }
 
 .content-form-generador {
-  background-color: lightyellow;
+  /* background-color: lightyellow; */
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  height: 100%;
+  min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .form-generador {
-  background-color: pink;
+  /* background-color: pink; */
   width: 100%;
 }
 
 .form-generador p {
   margin-bottom: .5rem;
+}
+
+.content-img {
+  /* background-color: greenyellow; */
+  min-height: calc(100vh - 72px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-img img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* FIN GENERADOR PDF */
