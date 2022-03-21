@@ -64,4 +64,11 @@
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+
+  .nav-pills .nav-link {
+    background: none;
+    border: 0;
+    font-size: .875rem;
+  }
+
 }
