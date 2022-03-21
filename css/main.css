@@ -146,6 +146,33 @@ h4 {
   -ms-interpolation-mode: nearest-neighbor;
 }
 
+/* Tabs */
+.nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: var(--placeholder);
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+.nav-link:hover, .nav-link:focus {
+  color: var(--body);
+}
+
+.nav-pills .nav-link {
+  background: none;
+  border: 0;
+  border-radius: 0.25rem;
+}
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: var(--title);
+  background-color: #fff;
+  border-radius: 0;
+  box-shadow: 0px 3px 0px var(--primary);
+}
+/* Fin Tabs */
+
 /* FIN ESTILOS GENERALES */
 
 /* GENERADOR PDF */
@@ -217,7 +244,7 @@ h4 {
   padding-top: 1.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-bottom: .5rem;
+  padding-bottom: 0;
   border-bottom: none;
 }
 
@@ -227,7 +254,7 @@ h4 {
 }
 
 .modal-footer {
-  padding-top: .5rem;
+  padding-top: 0;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
   padding-bottom: 1.5rem;
