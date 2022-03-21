@@ -102,7 +102,16 @@ h4 {
   color: #fff;
   background-color: var(--primary);
   border-color: var(--primary-dark);
-  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.4);
+}
+
+.light-btn:hover {
+  background-color: var(--input-bg);
+}
+
+.light-btn:focus {
+  background-color: var(--input-bg);
+  box-shadow: 0 0 0 0.25rem rgba(160, 163, 189, 0.4);
 }
 
 .form-group {
@@ -195,3 +204,11 @@ h4 {
 }
 
 /* FIN GENERADOR PDF */
+
+/* MODALS */
+
+.modal-title {
+  font-weight: 700;
+  color: var(--title);
+}
+/* FIN MODALS */
