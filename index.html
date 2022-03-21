@@ -38,8 +38,11 @@
                   Ver formato de carga
                 </button>
               </p>
+
               <div class="form-group">
-                <input type="file" class="form-control input-file" id="inputGroupFile04" aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                <div class="file-upload-wrapper" data-text="Ningún archivo seleccionado">
+                  <input name="file-upload-field" type="file" class="file-upload-field" value="">
+                </div>
                 <div class="text-help error">Debe cargar un archivo en formato xlsx</div>
               </div>
 
@@ -121,7 +124,11 @@
   </div>
   <!-- Fin Modals -->
 
+
+  <!-- JS files -->
+  <script src="js/jquery.3.2.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
